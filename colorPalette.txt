@@ -1,0 +1,7 @@
+color palette
+
+Rich black   - #010C13
+Onyx	     - #3F4045
+Raisin black - #30292F
+Paynes gray  - #5D737E
+White  	     = #FCFCFC
