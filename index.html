@@ -11,7 +11,11 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/github-icon.png" class="logo">
+          <div class="logos">
+            <p>Joseph Cruz</p>
+            <a href="https://github.com/JosephCSC"><img src="images/github-icon.png" class="logo"></a>
+            <a href="https://www.linkedin.com/in/joseph-cruz-76ba7313a/"><img src="images/linked-icon.png" class="linkLogo"></a>
+          </div>
           <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -44,8 +48,21 @@
         </div>
         <div class="rightSide">
           <p> SKILLS</p>
-          <p class="desc"> Hello, I am a recently graduated computer science major from Sacramento State University. I have worked on multiple projects using many
-            languages, with my biggest project being an Mobile Application created for a client.
+          <div class="list">
+            <div class="skill">Java</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C</div>
+            <div class="skill">C++</div>
+            <div class="skill">Dart</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">OpenGL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Git</div>
+            <div class="skill">Github</div>
+            <div class="skill">Jira</div>
+          </div>
           </p>
         </div>
       </div>
@@ -63,7 +80,47 @@
       <div class="header-contact">
         <p>CONTACT</p>
       </div>
+      <div class="contactB">
+        <form class="contact-form" name="submit-to-google-sheet">
+          <div class="contact-name">
+            <label class="formLabel" for="name">Name</label>
+            <input type="text" name="Name" placeholder="Enter Your Name" required class="formInput">
+          </div>
+          <div class="contact-email">
+            <label class="formLabel" for="name">Email</label>
+            <input type="text" name="Email" placeholder="Enter Your Email" required class="formInput">
+          </div>
+          <div class="contact-Message">
+            <label class="formLabel" for="name">Message</label>
+            <textarea name="Message" placeholder="Enter a Message" required class="formMessage"
+            rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+        <span id="msg"></span>
+      </div>
     </section>
 
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxHJMuCGnI0QRk-XGXESC_-1YW0lr_2g9HB-s_LLaQ5jZyQR6BhbRIcGw2U5l293smz/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message has been Sent."
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>

@@ -35,9 +35,39 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.logos{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.logos p{
+    padding-top: 10px;
+    display: inline-block;
+    list-style: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    width: 230px;
+
+}
+
 .logo{
     height: 40px;
     width: 40px;
+    position: relative;
+    top: 6px;
+}
+.logo:hover{
+    opacity: 75%;
+}
+
+.linkLogo{
+    height: 53px;
+    width: 53px;
+    position: relative;
+}
+.linkLogo:hover{
+    opacity: 75%;
 }
 
 nav ul li{
@@ -104,32 +134,70 @@ a.anchor {
 }
 .about-Content{
     padding-top: 4%;
-    padding-left: 15%;
+    padding-left: 13%;
     padding-right: 8%;
     display: flex;
-    font-size: 250%;
+    font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-align: left;
     color: var(--primary);
+    height: 81%;
+    justify-content: space-around;
+
+}
+
+.leftSide{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-Content .desc{
     display: flex;
     padding-top: 6%;
-    padding-right: 20%;
-    font-size: 80%;
+    font-size: 60%;
     font-weight: 250;
     text-align: left;
     line-height: 150%;
     color: var(--secondaryC);
+
+}
+
+
+.rightSide{
+    height: 90%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    padding-top: 8%;
+    font-size: 55%;
+    font-weight: 250;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    row-gap: 20px;
+
+}
+
+.skill{
+    padding: 3% 5%;
+    border-radius: 10px;
+    background-color: var(--tertiaryC);
+    color: var(--primary);
 }
 
 
 .projects{
-    height: 92vh;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--pop);
+    border: 2px solid black;
 }
 
 .header-projects{
@@ -143,9 +211,12 @@ a.anchor {
 }
 
 .contact{
-    height: 92vh;
-    width: 100%;
-    background-color: var(--pop);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondaryC);
+    border: 2px solid black;
+    align-items: center;
+
 }
 
 .header-contact{
@@ -153,7 +224,93 @@ a.anchor {
     font-size: 300%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    text-align: center;
     letter-spacing: 1px;
-    color: var(--primary);
+    color: var(--pop);
+    width: 30%;
+    text-align: center;
+}
+
+.contactB{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color: var(--primary);
+    height: 800px;
+    width: 45%;
+    border-radius: 5px;
+    align-items: flex-start;
+    box-shadow: var(--primary) 0 7px 29px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formInput{
+    display: flex;
+    color: #333;
+    padding: 2rem;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    background: var(--tertiaryC);
+    border-radius: 5px;
+    font-weight: 600;
+    width: 800px;
+
+}
+
+.formLabel{
+    padding-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    color: var(--pop);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.formMessage{
+    display: flex;
+    height: 300px;
+    color: #333;
+    padding: 2rem;
+    margin-left: 25px;
+    font-size: 1.1rem;
+    background: var(--tertiaryC);
+    border-radius: 5px;
+    font-weight: 600;
+    width: 800px;
+}
+
+.btn {
+    margin-top: 2%;
+    margin-left: 3%;
+    background: #7843e9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s;
+}
+
+.contact__btn {
+    width: 30%;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+}
+.btn--theme {
+    background: var(--pop);
+    color: var(--primary)
+}
+
+#msg{
+    padding-left: 40%;
+    color: var(--pop);
+    display: flex;
+    font-size: 1.1rem;
+    position: relative;
+    top: -65px;
 }
