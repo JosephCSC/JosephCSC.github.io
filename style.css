@@ -26,7 +26,7 @@ body{
 }
 
 .container{
-    padding: 20px 5%;
+    padding: 4px 5%;
     background-color: var(--primary);
 }
 nav{
@@ -113,7 +113,7 @@ nav ul li a:hover{
 a.anchor {
     display: block;
     position: relative;
-    top: -80px;
+    top: -55px;
     visibility: hidden;
 }
 .about{
@@ -142,7 +142,7 @@ a.anchor {
     font-weight: 600;
     text-align: left;
     color: var(--primary);
-    height: 81%;
+    height: 70%;
     justify-content: space-around;
 
 }
@@ -197,7 +197,6 @@ a.anchor {
     justify-content: center;
     flex-direction: column;
     background-color: var(--pop);
-    border: 2px solid black;
 }
 
 .header-projects{
@@ -214,7 +213,6 @@ a.anchor {
     display: flex;
     flex-direction: column;
     background-color: var(--secondaryC);
-    border: 2px solid black;
     align-items: center;
 
 }
@@ -242,18 +240,20 @@ a.anchor {
     align-items: flex-start;
     box-shadow: var(--primary) 0 7px 29px 0;
     font-family: Arial, Helvetica, sans-serif;
+    align-items: stretch;
 }
 
 .formInput{
     display: flex;
     color: #333;
     padding: 2rem;
-    margin-left: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 1.1rem;
     background: var(--tertiaryC);
     border-radius: 5px;
     font-weight: 600;
-    width: 800px;
+    width: 90%;
 
 }
 
@@ -274,12 +274,13 @@ a.anchor {
     height: 300px;
     color: #333;
     padding: 2rem;
-    margin-left: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 1.1rem;
     background: var(--tertiaryC);
     border-radius: 5px;
     font-weight: 600;
-    width: 800px;
+    width: 90%;
 }
 
 .btn {
@@ -313,4 +314,84 @@ a.anchor {
     font-size: 1.1rem;
     position: relative;
     top: -65px;
+}
+
+.projects-container{
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 150px;
+    width: 100vw;
+    padding-bottom: 6%;
+
+
+    /*We need to get rid of this to create a 
+        true flexbox*/
+    width: 100vw;
+}
+
+.project-container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+
+    /*items to be deleted*/
+    height: 60vh;
+}
+
+.project-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.project-desc{
+    padding-top: 2%;
+    font-size: 120%;
+    font-weight: 250;
+    text-align: left;
+    line-height: 150%;
+    color: var(--secondaryC);
+}
+.projectL{
+    width: 55%;
+}
+
+.projectR{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 130%;
+    color: var(--primary);
+}
+
+.project-image{
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+
+.project-tools{
+    margin-top: 3%;
+}
+.project-list{
+    margin-top: 3%;
+    font-weight: 250;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    row-gap: 20px;
+    color: var(--primary)
+}
+.skill-project{
+    padding: 3% 5%;
+    border-radius: 10px;
+    background-color: var(--tertiaryC);
+    color: var(--primary);
+    font-size: 65%;
+    font-weight: 600;
 }
