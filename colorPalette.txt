@@ -1,7 +1,12 @@
 color palette
 
-Rich black   - #010C13
-Onyx	     - #3F4045
-Raisin black - #30292F
-Paynes gray  - #5D737E
-White  	     = #FCFCFC
+    --pop:      #FFF6E0;
+    --tertiaryC:  #D8D9DA;
+    --secondaryC: #61677A;
+    --primary:       #272829;
+
+
+    --pop:        #525FE1;
+    --tertiaryC:  #FFF6F4;
+    --secondaryC: #FFA41B;
+    --primary:    #F86F03;
