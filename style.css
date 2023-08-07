@@ -95,7 +95,7 @@ nav ul li a:hover{
 }
 
 .header-text .home-header{
-    padding-top: 20%;
+    padding-top: 18%;
     text-align: center;
     font-size: 450%;
     font-family: Arial, Helvetica, sans-serif;
@@ -287,15 +287,11 @@ a.anchor {
 .btn {
     margin-top: 2%;
     margin-left: 3%;
-    background: #7843e9;
-    color: #fff;
-    text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
     font-weight: 700;
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
-    transition: transform .3s;
 }
 
 .contact__btn {
@@ -332,8 +328,6 @@ a.anchor {
     display: flex;
     flex-direction: row;
 
-    /*items to be deleted*/
-    height: 60vh;
 }
 
 .project-title{
@@ -369,6 +363,12 @@ a.anchor {
     display: flex;
     height: 60%;
     width: 100%;
+}
+
+.pimage{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 var(--primary);
 }
 
 .project-tools{
