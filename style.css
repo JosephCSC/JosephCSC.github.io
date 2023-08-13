@@ -343,7 +343,7 @@ a.anchor {
     font-size: 120%;
     font-weight: 250;
     text-align: left;
-    line-height: 150%;
+    line-height: 190%;
     color: var(--secondaryC);
 }
 .projectL{
@@ -392,4 +392,8 @@ a.anchor {
     color: var(--primary);
     font-size: 65%;
     font-weight: 600;
+}
+
+.project-desc p{
+    margin-bottom: 5%;
 }
